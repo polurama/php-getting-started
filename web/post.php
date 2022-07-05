@@ -1,10 +1,8 @@
 <?php
 
-declare(strict_types=1);
-var_dump($_POST['username']);
+session_start();
 
-echo '<pre>';
-print_r($_POST);
-print_r($_SERVER);
-print_r($_SESSION);
-echo '</pre>';
+$_SESSION['username'] = $_POST['username'];
+
+header('Location: index.php');
+

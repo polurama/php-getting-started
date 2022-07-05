@@ -1,9 +1,20 @@
 <?php
 
-include 'index.html';
+session_start();
 
-echo 'Hello,/ <br>';
+if(!isset($_SESSION['username'])) {
+    include 'index.html';
 
+} else {
 ?>
-
-<a href="exit.php">Завершить сессию</a>;
+<hr>
+<?php
+    echo "Привет, {$_SESSION['username']}! </br>";
+//    echo '<pre>';
+//    var_dump($_SESSION);
+//    echo '</pre>';
+?>
+<hr>
+<a href="exit.php">Завершить сессию</a>
+<hr>
+<?php } ?>
