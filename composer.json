@@ -1,8 +1,18 @@
 {
-  "require" : {
-
-  },
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
+    "name": "student_of_netology/2022",
+    "description": "I'm studying PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "StudentOfNetology\\2022\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denis",
+            "email": "kvas.ahabanin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
 }
