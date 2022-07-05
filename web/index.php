@@ -2,4 +2,4 @@
 
 include 'index.html';
 
-echo 'Hello';
+echo 'Hello, ';
