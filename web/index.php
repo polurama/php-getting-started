@@ -2,7 +2,7 @@
 
 include 'index.html';
 
-echo 'Hello, <br>';
+echo 'Hello,/ <br>';
 
 ?>
 
